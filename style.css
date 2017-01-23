@@ -1,0 +1,206 @@
+* {
+	box-sizing: border-box;
+}
+
+.clearfix {
+	clear: both;
+}
+
+.top {
+/*	height: 20vh;
+	margin: auto;
+	max-width: 400px;
+	margin-top: 50px;
+	position: relative;*/
+
+
+	height: 40vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(back.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.budget {
+	position: absolute;
+	width: 350px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.budget_income {
+	width: 65%;
+	margin-bottom: 10px;
+	background-color: #28B9B5;
+	padding: 10px;
+	float: left;
+}
+
+.budget_expenses {
+	width: 65%;
+	padding: 10px;
+	background-color: #FF5049;
+	float: left;
+}
+
+/*
+.budget_balance {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	background-color: #81ea93;
+	width: 32%;
+}
+*/
+
+.budget_balance {
+	display: inline-block;
+	/*background-color: #81ea93;*/
+	margin-left: 10px;
+	width: 30%;
+	height: 100%;
+	color: white;
+	clear: both;
+}
+
+.budget_income_text {
+	float: left;
+}
+
+.budget_income_value {
+	float: right;
+}
+
+.budget_expenses_text {
+	float: left;
+}
+
+.budget_expenses_value {
+	float: right;
+}
+
+.budget_balance_value {
+	float: right;
+	font-size: 1.5em;
+}
+
+.bottom {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
+
+.add_budget {
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+	padding: 14px;
+	/*background-color: #d3dded;*/
+	background-color: #f4f4e3;
+}
+
+.choose_type {
+	width: 55px;
+	height: 44px;
+	font-size: 14px;
+	border-radius: 2px;
+	border: 1px solid #e7e7e7;
+	transition: border 0.5s;
+	margin-right: 10px;
+}
+
+.add_description {
+	width: 400px;
+	padding: 12px 15px;
+	border-radius: 5px;
+	border: 1px solid #e7e7e7;
+	transition: border 0.5s;
+	margin-right: 10px;
+}
+
+.add_value {
+	width: 100px;
+	padding: 12px 15px;
+	border-radius: 5px;
+	border: 1px solid #e7e7e7;
+	transition: border 0.5s;
+	margin-right: 10px;
+}
+
+.choose_type:focus, .add_description:focus,
+.add_value:focus, .add_btn:focus {
+	outline: none;
+	border: 1px solid #706c07;
+
+}
+
+.add_btn {
+	width: 70px;
+	height: 43px;
+	border-radius: 2px;
+	border: 1px solid #e7e7e7;
+	transition: border 0.5s;
+}
+
+.transaction {
+	display: table;
+	width:70%;
+	border-collapse:collapse;
+	margin: 60px auto;
+}
+
+
+.transaction-row{
+	display: table-row;
+	-webkit-transtion: width 1s;
+	transition: width 1s;
+}
+
+.transaction-row:nth-child(even) {
+	background-color: #dddddd;
+}
+.transaction-cell, .transaction-head{
+	display: table-cell;
+	padding:0.6em;
+	border-bottom:#f0f0f0 1px solid;
+}
+
+.transaction-head{
+	font-weight:bold;
+}
+
+.desc {
+	width: 50%;
+	text-align: left;
+}
+
+.outgoing {
+	width: 19%;
+	text-align: right;
+}
+
+.incoming {
+	width: 19%;
+	text-align: right;
+}
+
+.edit_button {
+	width: 12%;
+	visibility: hidden;
+	text-align: center;
+}
+
+.edit, .delete {
+	width: 28px;
+	font-size: 12px;
+	display: inline-block;
+	background-color: #d5deed;
+	border: 1px solid #535963;
+}
+
+.income_item:hover .edit_button, .expenses_item:hover .edit_button {
+	visibility: visible;
+}
+
+
